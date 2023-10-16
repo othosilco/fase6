@@ -1,0 +1,65 @@
+package dao;
+
+import beans.Hoteis;
+
+public class HoteisDAO implements DAO<Hoteis> {
+	private DataSource dataSource;
+	
+	public HoteisDAO(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	
+	public DataSource getDataSource(); {
+		return this.dataSource;
+	}
+	
+	@Override
+	public void create(Hoteis object) {
+		try {
+			
+			String SQL = "Insert into TB_HOTEIS" +
+			"(nome, titulo, descricao, nota, preco)" + "values (?,?,?,?,?)";
+			
+			//PrepareStatement
+			PreparedStatement stm = dataSource.getConnection().prepareStatement(SQL);
+			
+			//Adicionar os parametros
+			stm.setString(1,object.getNome())
+			stm.setString(2,object.getTitulo())
+			stm.setString(3,object.getDescricao())
+			stm.setString(4,object.getNota())
+			stm.setString(5,object.getPreco())
+			stm.setString(6,object.getFoto())
+			
+			int resultado = stm.executeUpdate():
+			if (resultado != 0)
+				System.out.println("Hotel cadastrado com sucesso");
+			else {
+				System.out.println("Erro no cadastro do hotel");
+				throw new RuntimeException("Erro no cadastro do hotel");
+			}
+			
+		}catch(Exception ex) {
+			System.out.println("Erro no método de criação" + ex.getMessage())
+		}
+			
+	}
+
+	@Override
+	public Hoteis read(Hoteis object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Hoteis object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Hoteis object) {
+		// TODO Auto-generated method stub
+		
+	}
+}

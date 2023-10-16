@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\othoc\OneDrive\Documentos\FIAP\Fase 6\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4053634153.index
+\ListaDeHoteis\src\main\java
+C:\Users\othoc\OneDrive\Documentos\FIAP\Fase 6\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2095936762.index
+\HelloJSP\src\main\java

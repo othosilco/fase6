@@ -1,0 +1,12 @@
+127.0.0.1 - - [15/Oct/2023:09:36:51 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [15/Oct/2023:09:36:53 -0300] "GET /HelloJSP/hello.jsp HTTP/1.1" 200 877
+127.0.0.1 - - [15/Oct/2023:09:36:53 -0300] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [15/Oct/2023:17:11:18 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [15/Oct/2023:17:11:19 -0300] "GET /ListaDeHoteis/WEB-INF/classes/controller/LoginServlet.java HTTP/1.1" 404 682
+127.0.0.1 - - [15/Oct/2023:17:13:00 -0300] "GET /ListaDeHoteis/WEB-INF/classes/controller/index.jsp HTTP/1.1" 404 682
+127.0.0.1 - - [15/Oct/2023:17:13:11 -0300] "GET /ListaDeHoteis/index.jsp HTTP/1.1" 200 409
+127.0.0.1 - - [15/Oct/2023:17:14:04 -0300] "POST /ListaDeHoteis/loginServlet HTTP/1.1" 404 781
+127.0.0.1 - - [15/Oct/2023:17:14:12 -0300] "GET /ListaDeHoteis/erro.jsp HTTP/1.1" 500 3278
+127.0.0.1 - - [15/Oct/2023:17:14:27 -0300] "POST /ListaDeHoteis/loginServlet HTTP/1.1" 404 781
+127.0.0.1 - - [15/Oct/2023:17:33:25 -0300] "GET /ListaDeHoteis/ HTTP/1.1" 200 409
+127.0.0.1 - - [15/Oct/2023:17:33:29 -0300] "POST /ListaDeHoteis/loginServlet HTTP/1.1" 404 781

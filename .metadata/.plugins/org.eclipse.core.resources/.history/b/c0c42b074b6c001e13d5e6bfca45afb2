@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulliver Traveller - Hotéis</title>
+    <link rel="stylesheet" href="hotels.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <nav class="header">
+        <div class="logo">
+            <a href="#" class="titulo">
+                <h1 class="titulo">Gul<a >live</a>r<a>
+                        Travel</a>ler</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="#">Hotéis</a></li>
+                <li><a href="#">Roteiros</a></li>
+                <li><a href="#">Reservas</a></li>
+            </ul>
+            <button class="registro-btn">Login</button> 
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="lista-cont">
+            <div class="left-col">
+                <p>Mais de 200 Opções</p>
+                <h1>Hotéis Recomendados em São Paulo</h1>
+                
+                <div class="house"> 
+                    <div class="house-img">
+                        <img src="images/house-1.png">
+                    </div>
+                    <div class="house-info">
+                        <p><c:out value="${Hoteis.nome}"/></p>
+                        <h3>Hotel de Luxo no centro da cidade</h3>
+                        <p>2 Quarto / 2 Banheiros / Wifi / Cozinha</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 200 <span>/ Diária</span></h4>
+                            <a class="btn-details" href="detalsH.html"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/intercont.jpg">
+                    </div>
+                    <div class="house-info">
+                        <p><c:out value="${Hoteis.nome}"/></p>
+                        <h3>O mais bonito da região</h3>
+                        <p>1 Quarto / 1 Banheiros / Wifi / Piscina</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 1.118 <span>/ PerNoite</span></h4>
+                            <a class="btn-details" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/Hilton.jpg">
+                    </div>
+                    <div class="house-info">
+                        <p>Hilton Hotels & Resorts</p>
+                        <h3>Focado em sofiticação</h3>
+                        <p>2 Quarto / 2 Banheiros / Wifi / Serviço de quarto / Spa / Piscina / Academia</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 990 <span>/ Diária</span></h4>
+                            <a class="btn-details" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/mercure.jpg">
+                    </div>
+                    <div class="house-info">
+                        <p>Grand Mercure SP - Itaim Bibi</p>
+                        <h3>O bem estar que você merece</h3>
+                        <p>1 Quarto / 1 Banheiros / Wifi / Piscina / Restaurante / Ar Condicionado</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 915 <span>/ PerNoite</span></h4>
+                            <a class="btn-details" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/tangara.jpg">
+                    </div>
+                    <div class="house-info">
+                        <p>Palácio Tangará</p>
+                        <h3>Um Oásis Urbano em São Paulo</h3>
+                        <p>1 Quarto / 1 Banheiros / Wifi / Piscina / Restaurante / Ar Condicionado / Serviço de Quarto</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 2.800 <span>/ PerNoite</span></h4>
+                            <a class="btn-details" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/unique.jpg">
+                    </div>
+                    <div class="house-info">
+                        <p>Hotel Unique</p>
+                        <h3>Atendimento e Conforto no Ibirapuera</h3>
+                        <p>2 Quarto / 2 Banheiros / Wifi / Ar Condicionado / Spa / Piscina / Restaurante / Academia</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 2.483 <span>/ PerNoite</span></h4>
+                            <a class="btn-details" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house-img">
+                        <img src="images/qoya.jpg">
+                    </div>
+                    <div class="house-info">
+                        <p>Qoya Hotel</p>
+                        <h3>Sua qualidade em conforto e em cafés</h3>
+                        <p>1 Quarto / 2 Banheiros / Wifi / Ar Condicionado / Piscina / Restaurante</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 Hóspedes</p>
+                            <h4>R$ 1.158 <span>/ Diária</span></h4>
+                            <a class="btn-details" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="sidebar">
+                    <h2>Selecione Filtros</h2>
+                    <h3>Tipo de Propriedade</h3>
+                    <div class="filtro">
+                        <input type="checkbox"> <p>Casa</p> <span>(0)</span>
+                    </div>
+                    <div class="filtro">
+                        <input type="checkbox"> <p>Hostel</p> <span>(0)</span>
+                    </div>
+                    <div class="filtro">
+                        <input type="checkbox"> <p>Flat</p> <span>(0)</span>
+                    </div>
+                    <div class="filtro">
+                        <input type="checkbox"> <p>Hotel</p> <span>(0)</span>
+                    </div>
+                   <h3>Benefícios</h3>
+                   <div class="filtro">
+                    <input type="checkbox"> <p>Ar Condicionado</p> <span>(0)</span>
+                    </div>
+                    <div class="filtro">
+                        <input type="checkbox"> <p>Wifi</p> <span>(0)</span>
+                        </div>
+                        <div class="filtro">
+                            <input type="checkbox"> <p>Academia</p> <span>(0)</span>
+                            </div>
+                            <div class="filtro">
+                                <input type="checkbox"> <p>Piscina</p> <span>(0)</span>
+                                </div>
+                                <div class="filtro">
+                                    <input type="checkbox"> <p>Spa</p> <span>(0)</span>                   
+                                </div>
+                                <div class="filtro">
+                                    <input type="checkbox"> <p>Serviço de Quarto</p> <span>(0)</span>                   
+                                </div>
+                                <div class="filtro">
+                                    <input type="checkbox"> <p>Restaurante</p> <span>(0)</span>                   
+                                </div>
+                    <div class="sidebar-link">
+                        <a href="#">Veja Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="paginacao">
+            <img src="images/arrow.png" alt="">
+            <span class="atual">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&middot; &middot; &middot; &middot;</span>
+            <span>20</span>
+        <img src="images/arrow.png" class="right-arrow">
+        </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Gulliver</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="hotels.html">Hotéis</a></li>
+                        <li><a href="#">Roteiros</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Apoio aos PcDs</a></li>
+                        <li><a href="#">Reporte um problema</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinos Requisitados</h4>
+                    <ul>
+                        <li><a href="#">São Paulo</a></li>
+                        <li><a href="#">Salvador</a></li>
+                        <li><a href="#">Rio de Janeiro</a></li>
+                        <li><a href="#">Acre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nossas redes sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>

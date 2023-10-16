@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\othoc\OneDrive\Documentos\FIAP\Fase 6\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2667455893.index
+3575690377.index
+3147395387.index
+2277718797.index
+133513470.index
+3065851034.index
